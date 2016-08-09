@@ -42,7 +42,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_CONFIG := owl_defconfig
 TARGET_KERNEL_SOURCE := kernel/huawei/angler
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-5.x/bin
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-5.x-kernel/bin
 
 BOARD_USES_ALSA_AUDIO := true
 BOARD_HAVE_BLUETOOTH := true
@@ -133,12 +133,5 @@ WIFI_DRIVER_FW_PATH_AP := "/vendor/firmware/fw_bcmdhd_apsta.bin"
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
-
-# Uber Optimizations
-export CLANG_O3 := true
-export STRICT_ALIASING := false
-export KRAIT_TUNINGS := false
-export GRAPHITE_OPTS := true
-export ENABLE_GCCONLY := true
 
 -include vendor/huawei/angler/BoardConfigVendor.mk
