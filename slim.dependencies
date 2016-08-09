@@ -1,7 +1,14 @@
 [
  {
-   "repository":  "SlimRoms/kernel_huawei_angler",
+   "repository": "Dabug123/owlCore64",
    "target_path": "kernel/huawei/angler",
-   "branch":      "mm6.0"
+   "branch": "saberTest-p-uber",
+   "remote": "github"
+ },
+ {
+   "repository": "TheMuppets/proprietary_vendor_huawei",
+   "target_path": "vendor/huawei",
+   "branch": "cm-13.0",
+   "remote": "github"
  }
 ]
